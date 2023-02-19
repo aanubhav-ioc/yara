@@ -45,8 +45,6 @@ strings:
 $h = "set" // Look for several of these
 $i = "start /min"
 
-
-
 condition:
 	$x and ((3 of ($a,$b,$c,$d,$e)) or (($f or $f2) and $g) or $tok1 or (#h > 15 and $i))
 
