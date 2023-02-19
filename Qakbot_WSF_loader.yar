@@ -15,11 +15,11 @@ rule Qakbot_WSF_loader {
       malpedia_family = "win.qakbot"
 
    strings:
-    $x = "gnirtSot." nocase
+
     $y = "noitcnuf" nocase
     $z = "BEGIN CERTIFICATE REQUEST" nocase
 
     condition:
-    $x and $y and $z and filesize < 20000
+    $y and $z and filesize < 20000
 
 }
